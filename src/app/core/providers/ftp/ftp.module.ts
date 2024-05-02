@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { FtpService } from 'app/core/services/ftp/ftp.service';
+import { FtpService } from 'app/core/providers/ftp/ftp.service';
 
 @Module({
     providers: [FtpService],
