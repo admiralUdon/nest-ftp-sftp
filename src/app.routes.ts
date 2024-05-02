@@ -5,7 +5,7 @@ import { SftpModule } from "app/modules/sftp/sftp.module";
 
 export const appRoutes: Routes = [
     {
-        path: process.env.SERVER_CONTEXT ? (process.env.SERVER_CONTEXT + '/api') : 'api',
+        path: 'api',
         children: [
             { path: 'hello', module: HelloModule },
             { path: 'ftp', module: FtpModule },
